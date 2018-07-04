@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>成长记录</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style> 
+#firstbtn{ float:left;width:30%}
+#search-location{ float:right;width:40%}
+#search-lenth{width:40%}
+#recordbk{
+width:100%;
+height:100%;
+}
+#recordadd{
+background-color:#F0F0F0;
+}
+#box
+{
+box-shadow:0px 3px  30px 5px #aaa;
+}
+</style> 
+</head>
+<body>
+<div class="container-fluid" style="background-color: #46A3FF">
+	<div class="row-fluid">
+		<div class="span12">
+		<div id="firstbtn" class="btn-group">
+				 <button data-toggle="dropdown" class="btn dropdown-toggle" type="button"><em class="icon-align-justify">≡</em></button>
+<ul class="dropdown-menu">
+					<li>
+						<a href="/setting">设置</a>
+					</li>
+					<li>
+						<a href="/record">成长记录</a>
+					</li>
+					<li>
+						<a href="/about-me">关于我</a>
+					</li>
+				</ul>
+		</div>
+		<form id="search-location" class="form-search">
+				<input id="search-lenth" class="input-medium search-query" type="text"/> <button type="submit" class="btn">查找</button>
+		</form>
+		<div style="padding-top:10%">
+            <ul class="nav nav-pills nav-justified">
+				<li>
+					<a href="/main"><font color="white">今日推荐</font></a>
+				</li>
+				<li>
+					<a href="/collection"><font color="white">我的曲库</font></a>
+				</li>
+				<li>
+					<a href="/todayplay"><font color="white">今日播放</font></a>
+				</li>
+			</ul>
+		</div>	
+		</div>
+	</div>
+</div>
+
+<div  id="recordbk">
+<div style="float:left;width:50%;padding-top:3%;padding-left:15%;padding-bottom:5%">
+        <a href="/record" class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-plus"></span> 添加
+        </a>
+</div>
+<div style="float:right;width:50%;padding-top:3%;padding-left:15%;padding-bottom:5%">
+        <a href="/record" class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-remove"></span> 取消
+        </a>
+</div>
+<div id="box" >
+<div id="recordadd">
+     <div style="padding-left:3%">
+     <font size="5">05/04/2018</font>
+     </div>
+	 <div style="padding-left:15%;padding-right:15%;height:40%;width:100%">
+	 <textarea class="form-control" rows="10" cols="10"></textarea>
+	 </div>
+	 <div style="float:left;padding-top:2%;padding-left:18%;width:50%;">
+	 <a href="/record"><font size="4" color="green">提交</font></a>
+	 </div>
+	 <div style="float:right;padding-top:2%;padding-left:27%;width:50%;">
+	 <a href="/record"><font size="4" color="green">撤回</font></a>
+	 </div>
+</div>
+</div>
+</div>
+</body>
+</html>

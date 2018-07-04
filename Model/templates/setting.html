@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>设置</title>
+<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+ 
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"></script>
+ 
+<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+ 
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style> 
+#firstbtn{ float:left;width:30%}
+#search-location{ float:right;width:40%}
+#search-lenth{width:40%}
+#leftimage{float:left;width:50%;padding-left:13%;padding-top:10%;padding-bottom:5%}
+#rightimage{float:right;width:50%;padding-left:7%;padding-top:10%;padding-bottom:5%}
+</style> 
+</head>
+<body>
+<div class="container-fluid" style="background-color: #46A3FF">
+	<div class="row-fluid">
+		<div class="span12">
+		<div id="firstbtn" class="btn-group">
+				 <button data-toggle="dropdown" class="btn dropdown-toggle" type="button"><em class="icon-align-justify">≡</em></button>
+<ul class="dropdown-menu">
+					<li>
+						<a href="/setting">设置</a>
+					</li>
+					<li>
+						<a href="/record">成长记录</a>
+					</li>
+					<li>
+						<a href="/about-me">关于我</a>
+					</li>
+				</ul>
+		</div>
+		<form id="search-location" class="form-search">
+				<input id="search-lenth" class="input-medium search-query" type="text"/> <button type="submit" class="btn">查找</button>
+		</form>
+		<div style="padding-top:10%">
+            <ul class="nav nav-pills nav-justified">
+				<li>
+					<a href="/main"><font color="white">今日推荐</font></a>
+				</li>
+				<li>
+					<a href="/collection"><font color="white">我的曲库</font></a>
+				</li>
+				<li>
+					<a href="/todayplay"><font color="white">今日播放</font></a>
+				</li>
+			</ul>
+		</div>	
+		</div>
+	</div>
+</div>
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="span12" style="padding-left:40%;padding-top:5%">
+			<form class="form-inline">
+				<fieldset>
+					<legend><strong>您的信息：</strong></legend>
+					<p>
+						邮箱<input type="text" />
+					</p>
+					<p>
+						手机<input type="text" />
+					</p>
+				</fieldset>
+			</form>
+			<form class="form-inline">
+				<fieldset>
+					<legend><strong>儿童信息：</strong></legend> 年龄<input type="text" />
+					<p>
+					性别：
+						<label class="checkbox"><input type="checkbox" /> 男</label>
+						<label class="checkbox"><input type="checkbox" /> 女</label>
+					</p>
+					<p>
+					是否识字：
+						<label class="checkbox"><input type="checkbox" /> 是</label>
+						<label class="checkbox"><input type="checkbox" /> 否</label>
+					</p>
+					<p>
+					喜好：
+					</p>
+					<p>
+						<label class="checkbox"><input type="checkbox" /> 音乐</label>
+					</p>
+					<p>
+						<label class="checkbox"><input type="checkbox" /> 诗词</label>
+					</p>
+					<p>
+						<label class="checkbox"><input type="checkbox" /> 童话</label>
+					</p>
+					<p>
+						<label class="checkbox"><input type="checkbox" /> 寓言</label>
+					</p>
+					<p>
+						<label class="checkbox"><input type="checkbox" /> 名人</label>
+					</p>
+					<p>
+						<button class="btn" type="submit">提交</button>
+					</p>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</div>
+</body>
+</html>

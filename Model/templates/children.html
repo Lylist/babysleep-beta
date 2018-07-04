@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>儿童</title>
+<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+ 
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"></script>
+ 
+<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+ 
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+#img{
+position:absolute;
+width:100%;
+height:100%;
+}
+</style>
+</head>
+<body>
+<!--<div>
+<a href="./parent/main.html"><img border="0" src="../../images/1.gif" /> </a>
+</div>-->
+<img onclick="changeCode();" src="/static/images/1.gif" class="mydiv" id="img" />
+</body>
+<script>
+   function changeCode(){
+      document.getElementById("img").src="/static/images/1.gif";
+   }
+</script>
+
+
+
+<script>  
+/*设置一个长按的计时器，如果点击这个图层超过2秒则触发，mydiv里面的文字从out变in的动作*/  
+var timeout ;  
+   
+$(".mydiv").mousedown(function() {  
+    timeout = setTimeout(function() {  
+        window.location.href='/main';
+    }, 2000);  
+});  
+   
+$(".mydiv").mouseup(function() {  
+    clearTimeout(timeout);  
+    document.getElementById("img").src="/static/images/1.gif"; 
+});  
+  
+$(".mydiv").mouseout(function() {  
+    clearTimeout(timeout);  
+    $(".mydiv").text("out");
+	
+});  
+  
+</script>
+</html>
